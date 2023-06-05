@@ -49,7 +49,7 @@ const requestListener = async function (req, res) {
 	// 2. Query APIs
 	let resStats;
 	let errStats;
-	await timeout(1000, fetch(urlStats)).then(function(response) {
+	await timeout(1000, fetch(urlStats, { next: { revalidate: 60 } })).then(function(response) { // The data will be revalidated every 60 seconds (1 minute) ; according to https://vercel.com/docs/infrastructure/data-cache#time-based-revalidation
 		resStats = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -57,7 +57,7 @@ const requestListener = async function (req, res) {
 	});
 	let resLanguages;
 	let errLanguages;
-	await timeout(1000, fetch(urlLanguages)).then(function(response) {
+	await timeout(1000, fetch(urlLanguages, { next: { revalidate: 60 } })).then(function(response) {
 		resLanguages = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -65,7 +65,7 @@ const requestListener = async function (req, res) {
 	});
 	let resTrophies;
 	let errTrophies;
-	await timeout(1000, fetch(urlTrophies)).then(function(response) {
+	await timeout(1000, fetch(urlTrophies, { next: { revalidate: 60 } })).then(function(response) {
 		resTrophies = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -96,7 +96,7 @@ const requestListener = async function (req, res) {
 	} else {
 		let errMsg = errStats.toString().replace(/ to http[^ ]+ /g, " ").replace(/\, .*/g, "");
 		result +=
-		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlStats) + " -->\n";
+		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlStats) + " -->\n"
 		+ "\t\t\t<text x=\"24\" y=\"35\" fill=\"red\" font-family=\"Arial, Helvetica, sans-serif\">" + errMsg + "</text>\n";
 	}
 	result +=
@@ -110,7 +110,7 @@ const requestListener = async function (req, res) {
 	} else {
 		let errMsg = errLanguages.toString().replace(/ to http[^ ]+ /g, " ").replace(/\, .*/g, "");
 		result +=
-		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlLanguages) + " -->\n";
+		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlLanguages) + " -->\n"
 		+ "\t\t\t<text x=\"24\" y=\"35\" fill=\"red\" font-family=\"Arial, Helvetica, sans-serif\">" + errMsg + "</text>\n";
 	}
 	result +=
@@ -124,7 +124,7 @@ const requestListener = async function (req, res) {
 	} else {
 		let errMsg = errTrophies.toString().replace(/ to http[^ ]+ /g, " ").replace(/\, .*/g, "");
 		result +=
-		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlTrophies) + " -->\n";
+		  "\t\t\t<!-- ERROR " + escapeXmlCmts(urlTrophies) + " -->\n"
 		+ "\t\t\t<text x=\"9\" y=\"18\" fill=\"red\" font-family=\"Arial, Helvetica, sans-serif\">" + errMsg + "</text>\n";
 	}
 	result +=
@@ -145,10 +145,10 @@ const requestListener = async function (req, res) {
 var app = express();
 app.use('/api', requestListener);
 app.use('/', express.static(path.join(__dirname, '..')));
-app.use((req, res, next) => {
-  res.set('Cache-Control', 'no-store')
-  next()
-});
+//app.use((req, res, next) => {
+//  res.set('Cache-Control', 'no-store')
+//  next()
+//});
 
 app.listen(port);
 
