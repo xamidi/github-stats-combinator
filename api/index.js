@@ -1,6 +1,3 @@
-// e.g. https://github-stats-combinator.vercel.app/api?stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DMultiLanguage%2CLongTimeUser%2CCommits
-//      used https://www.urlencoder.org on query strings
-
 import fetch from "node-fetch"; // npm install node-fetch
 import express from "express"; // npm install express
 import path from "path";
@@ -49,7 +46,7 @@ const requestListener = async function (req, res) {
 	// 2. Query APIs
 	let resStats;
 	let errStats;
-	await timeout(1000, fetch(urlStats, { next: { revalidate: 60 } })).then(function(response) { // The data will be revalidated every 60 seconds (1 minute) ; according to https://vercel.com/docs/infrastructure/data-cache#time-based-revalidation
+	await timeout(5000, fetch(urlStats, { next: { revalidate: 60 } })).then(function(response) { // The data will be revalidated every 60 seconds (1 minute) ; according to https://vercel.com/docs/infrastructure/data-cache#time-based-revalidation
 		resStats = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -57,7 +54,7 @@ const requestListener = async function (req, res) {
 	});
 	let resLanguages;
 	let errLanguages;
-	await timeout(1000, fetch(urlLanguages, { next: { revalidate: 60 } })).then(function(response) {
+	await timeout(5000, fetch(urlLanguages, { next: { revalidate: 60 } })).then(function(response) {
 		resLanguages = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -65,7 +62,7 @@ const requestListener = async function (req, res) {
 	});
 	let resTrophies;
 	let errTrophies;
-	await timeout(1000, fetch(urlTrophies, { next: { revalidate: 60 } })).then(function(response) {
+	await timeout(5000, fetch(urlTrophies, { next: { revalidate: 60 } })).then(function(response) {
 		resTrophies = response;
 	}).catch(function(error) {
 		console.error(error);
@@ -85,7 +82,11 @@ const requestListener = async function (req, res) {
 	} catch (error) { console.error(error); }
 
 	// 3. Build resulting SVG
-	let result = "<svg width=\"776\" height=\"352\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:svg=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\" viewBox=\"0 0 776 352\">\n"
+	let result = "<!-- URL-encoder for query strings: https://www.urlencoder.org ; for https://github-readme-stats.vercel.app/api?(stats-query), https://github-readme-stats.vercel.app/api/top-langs/?(languages-query), https://github-profile-trophy.vercel.app/?(trophies-query) -->\n"
+	+ "<!-- Request format: https://github-stats-combinator.vercel.app/api?stats=UrlEncode(stats-query)&languages=UrlEncode(languages-query)&trophies=UrlEncode(trophies-query) -->\n"
+	+ "<!-- Exemplary request: https://github-stats-combinator.vercel.app/api?stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DMultiLanguage%2CLongTimeUser%2CCommits -->\n"
+	+ "<!-- Repositories: https://github.com/anuraghazra/github-readme-stats ; https://github.com/ryo-ma/github-profile-trophy ; https://github.com/xamidi/github-stats-combinator -->\n"
+	+ "<svg width=\"776\" height=\"352\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:svg=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\" viewBox=\"0 0 776 352\">\n"
 	+ "\t<defs id=\"lib\">\n"
 	+ "\t\t<svg id=\"stats\" width=\"467\" height=\"195\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:svg=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" version=\"1.1\">\n";
 	if (txtStats !== undefined) {
@@ -145,11 +146,6 @@ const requestListener = async function (req, res) {
 var app = express();
 app.use('/api', requestListener);
 app.use('/', express.static(path.join(__dirname, '..')));
-//app.use((req, res, next) => {
-//  res.set('Cache-Control', 'no-store')
-//  next()
-//});
-
 app.listen(port);
 
 console.log('Serving port ' + port + " at " + __filename);
