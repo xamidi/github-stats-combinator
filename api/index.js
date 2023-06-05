@@ -145,6 +145,11 @@ const requestListener = async function (req, res) {
 var app = express();
 app.use('/api', requestListener);
 app.use('/', express.static(path.join(__dirname, '..')));
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store')
+  next()
+});
+
 app.listen(port);
 
 console.log('Serving port ' + port + " at " + __filename);
