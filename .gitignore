@@ -6,7 +6,8 @@
 .pnp.js
 
 # testing
-/coverage
+http*.bat
+*.html
 
 # next.js
 /.next/
