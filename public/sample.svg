@@ -63,7 +63,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 235.01700820788554;
+        stroke-dashoffset: 234.9587161936623;
       }
     }
   
@@ -135,7 +135,7 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="commits">119</text>
+      <text class="stat  bold" x="219.01" y="12.5" data-testid="commits">121</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -273,15 +273,19 @@
         <svg data-testid="donut">
           
       <g class="stagger" style="animation-delay: 100ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#f34b7d" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="0" size="90.33829166227099" data-testid="lang-donut"/>
+        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#f34b7d" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="0" size="89.55582895514713" data-testid="lang-donut"/>
       </g>
     
       <g class="stagger" style="animation-delay: 200ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#e34c26" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="454.0897814784681" size="6.271026010713741" data-testid="lang-donut"/>
+        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#e34c26" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="450.1566949306149" size="6.250989540286818" data-testid="lang-donut"/>
       </g>
     
       <g class="stagger" style="animation-delay: 300ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#178600" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="485.6113962716342" size="3.3906823270152735" data-testid="lang-donut"/>
+        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#178600" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="481.5775954385056" size="3.361314022348722" data-testid="lang-donut"/>
+      </g>
+    
+      <g class="stagger" style="animation-delay: 400ms">
+        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#f1e05a" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="498.4734025409362" size="0.8318674822173256" data-testid="lang-donut"/>
       </g>
     
         </svg>
@@ -292,21 +296,28 @@
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#f34b7d"/>
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        C++ 90.34%
+        C++ 89.56%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
       <circle cx="5" cy="6" r="5" fill="#e34c26"/>
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        HTML 6.27%
+        HTML 6.25%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <circle cx="5" cy="6" r="5" fill="#178600"/>
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        C# 3.39%
+        C# 3.36%
+      </text>
+    </g>
+  </g><g transform="translate(0, 25)">
+    <g class="stagger" style="animation-delay: 600ms">
+      <circle cx="5" cy="6" r="5" fill="#f1e05a"/>
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        JavaScript 0.83%
       </text>
     </g>
   </g></g>
@@ -475,7 +486,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
   
           <text x="50%" y="18" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="13" fill="#fe428e">Commits</text>
           <text x="50%" y="85" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10.5" fill="#a9fef7">Hyper Committer</text>
-          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">394pt</text>
+          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">399pt</text>
           
     <style>
     @keyframes CommitsRankAnimation {
@@ -483,7 +494,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         width: 0px;
       }
       to {
-        width: 51.73333333333333px;
+        width: 53.06666666666666px;
       }
     }
     #Commits-rank-progress{
