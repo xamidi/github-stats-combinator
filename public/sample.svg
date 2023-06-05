@@ -1,9 +1,21 @@
+<!-- URL encoder for query strings: https://www.urlencoder.org ; for https://github-readme-stats.vercel.app/api?(stats-query), https://github-readme-stats.vercel.app/api/top-langs/?(languages-query), https://github-profile-trophy.vercel.app/?(trophies-query) -->
+<!-- Request format: https://github-stats-combinator.vercel.app/api?stats=UrlEncode(stats-query)&languages=UrlEncode(languages-query)&trophies=UrlEncode(trophies-query) -->
+<!-- Exemplary request: https://github-stats-combinator.vercel.app/api?stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DMultiLanguage%2CLongTimeUser%2CCommits -->
+<!-- Repositories: https://github.com/anuraghazra/github-readme-stats ; https://github.com/ryo-ma/github-profile-trophy ; https://github.com/xamidi/github-stats-combinator -->
 <svg width="776" height="352" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 776 352">
 	<defs id="lib">
 		<svg id="stats" width="467" height="195" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 			<!-- BEGIN https://github%2Dreadme%2Dstats.vercel.app/api?username=xamidi&show_icons=true&theme=radical&include_all_commits=true&hide_border=true -->
 
-      <svg width="467" height="195" viewBox="0 0 467 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="descId">
+      <svg
+        width="467"
+        height="195"
+        viewBox="0 0 467 195"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
+      >
         <title id="titleId">xamidi's GitHub Stats, Rank: B</title>
         <desc id="descId">Total Stars Earned: 7, Total Commits  : 7, Total PRs: 4, Total Issues: 11, Contributed to (last year): 6</desc>
         <style>
@@ -63,7 +75,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 234.9587161936623;
+        stroke-dashoffset: 234.8133392117556;
       }
     }
   
@@ -93,21 +105,43 @@
 
         
 
-        <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="466" fill="#141321" stroke-opacity="0"/>
+        <rect
+          data-testid="card-bg"
+          x="0.5"
+          y="0.5"
+          rx="4.5"
+          height="99%"
+          stroke="#e4e2e2"
+          width="466"
+          fill="#141321"
+          stroke-opacity="0"
+        />
 
         
-      <g data-testid="card-title" transform="translate(25, 35)">
+      <g
+        data-testid="card-title"
+        transform="translate(25, 35)"
+      >
         <g transform="translate(0, 0)">
-      <text x="0" y="0" class="header" data-testid="header">xamidi's GitHub Stats</text>
+      <text
+        x="0"
+        y="0"
+        class="header"
+        data-testid="header"
+      >xamidi's GitHub Stats</text>
     </g>
       </g>
     
 
-        <g data-testid="main-card-body" transform="translate(0, 55)">
+        <g
+          data-testid="main-card-body"
+          transform="translate(0, 55)"
+        >
           
-    <g data-testid="rank-circle" transform="translate(390.5, 47.5)">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40"/>
-        <circle class="rank-circle" cx="-10" cy="8" r="40"/>
+    <g data-testid="rank-circle"
+          transform="translate(390.5, 47.5)">
+        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
+        <circle class="rank-circle" cx="-10" cy="8" r="40" />
         <g class="rank-text">
           
         <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
@@ -125,7 +159,12 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="stars">7</text>
+      <text
+        class="stat  bold"
+        x="219.01"
+        y="12.5"
+        data-testid="stars"
+      >7</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -135,7 +174,12 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="commits">121</text>
+      <text
+        class="stat  bold"
+        x="219.01"
+        y="12.5"
+        data-testid="commits"
+      >126</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -145,7 +189,12 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="prs">4</text>
+      <text
+        class="stat  bold"
+        x="219.01"
+        y="12.5"
+        data-testid="prs"
+      >4</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -155,7 +204,12 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="issues">11</text>
+      <text
+        class="stat  bold"
+        x="219.01"
+        y="12.5"
+        data-testid="issues"
+      >11</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -165,7 +219,12 @@
     </svg>
   
       <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
-      <text class="stat  bold" x="219.01" y="12.5" data-testid="contribs">6</text>
+      <text
+        class="stat  bold"
+        x="219.01"
+        y="12.5"
+        data-testid="contribs"
+      >6</text>
     </g>
   </g>
     </svg>
@@ -176,11 +235,19 @@
 			<!-- END https://github%2Dreadme%2Dstats.vercel.app/api?username=xamidi&show_icons=true&theme=radical&include_all_commits=true&hide_border=true -->
 		</svg>
 		<svg id="languages" width="300" height="350" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-			<!-- BEGIN https://github%2Dreadme%2Dstats.vercel.app/api/top%2Dlangs/?username=xamidi&layout=donut%2Dvertical&theme=radical&hide_border=true -->
+			<!-- BEGIN https://github%2Dreadme%2Dstats.vercel.app/api/top%2Dlangs/?username=xamidi&layout=donut%2Dvertical&theme=radical&langs_count=4&hide_border=true -->
 
-      <svg width="300" height="350" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="descId">
-        <title id="titleId"/>
-        <desc id="descId"/>
+      <svg
+        width="300"
+        height="350"
+        viewBox="0 0 300 350"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
+      >
+        <title id="titleId"></title>
+        <desc id="descId"></desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -256,36 +323,101 @@
 
         
 
-        <rect data-testid="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="299" fill="#141321" stroke-opacity="0"/>
+        <rect
+          data-testid="card-bg"
+          x="0.5"
+          y="0.5"
+          rx="4.5"
+          height="99%"
+          stroke="#e4e2e2"
+          width="299"
+          fill="#141321"
+          stroke-opacity="0"
+        />
 
         
-      <g data-testid="card-title" transform="translate(25, 35)">
+      <g
+        data-testid="card-title"
+        transform="translate(25, 35)"
+      >
         <g transform="translate(0, 0)">
-      <text x="0" y="0" class="header" data-testid="header">Most Used Languages</text>
+      <text
+        x="0"
+        y="0"
+        class="header"
+        data-testid="header"
+      >Most Used Languages</text>
     </g>
       </g>
     
 
-        <g data-testid="main-card-body" transform="translate(0, 55)">
+        <g
+          data-testid="main-card-body"
+          transform="translate(0, 55)"
+        >
           
     <svg data-testid="lang-items">
       <g transform="translate(0, 0)">
         <svg data-testid="donut">
           
       <g class="stagger" style="animation-delay: 100ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#f34b7d" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="0" size="89.55582895514713" data-testid="lang-donut"/>
+        <circle 
+          cx="150"
+          cy="100"
+          r="80"
+          fill="transparent"
+          stroke="#f34b7d"
+          stroke-width="25"
+          stroke-dasharray="502.6548245743669"
+          stroke-dashoffset="0"
+          size="89.44461611444538"
+          data-testid="lang-donut"
+        />
       </g>
     
       <g class="stagger" style="animation-delay: 200ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#e34c26" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="450.1566949306149" size="6.250989540286818" data-testid="lang-donut"/>
+        <circle 
+          cx="150"
+          cy="100"
+          r="80"
+          fill="transparent"
+          stroke="#e34c26"
+          stroke-width="25"
+          stroke-dasharray="502.6548245743669"
+          stroke-dashoffset="449.59767822128134"
+          size="6.24322689309698"
+          data-testid="lang-donut"
+        />
       </g>
     
       <g class="stagger" style="animation-delay: 300ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#178600" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="481.5775954385056" size="3.361314022348722" data-testid="lang-donut"/>
+        <circle 
+          cx="150"
+          cy="100"
+          r="80"
+          fill="transparent"
+          stroke="#178600"
+          stroke-width="25"
+          stroke-dasharray="502.6548245743669"
+          stroke-dashoffset="480.97955940855763"
+          size="3.35713985205431"
+          data-testid="lang-donut"
+        />
       </g>
     
       <g class="stagger" style="animation-delay: 400ms">
-        <circle cx="150" cy="100" r="80" fill="transparent" stroke="#f1e05a" stroke-width="25" stroke-dasharray="502.6548245743669" stroke-dashoffset="498.4734025409362" size="0.8318674822173256" data-testid="lang-donut"/>
+        <circle 
+          cx="150"
+          cy="100"
+          r="80"
+          fill="transparent"
+          stroke="#f1e05a"
+          stroke-width="25"
+          stroke-dasharray="502.6548245743669"
+          stroke-dashoffset="497.8543848426174"
+          size="0.9550171404033325"
+          data-testid="lang-donut"
+        />
       </g>
     
         </svg>
@@ -294,30 +426,30 @@
         <svg data-testid="lang-names" x="25">
           <g transform="translate(0, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#f34b7d"/>
-      <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        C++ 89.56%
+      <circle cx="5" cy="6" r="5" fill="#f34b7d" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        C++ 89.44%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#e34c26"/>
-      <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        HTML 6.25%
+      <circle cx="5" cy="6" r="5" fill="#e34c26" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        HTML 6.24%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#178600"/>
-      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+      <circle cx="5" cy="6" r="5" fill="#178600" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
         C# 3.36%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms">
-      <circle cx="5" cy="6" r="5" fill="#f1e05a"/>
-      <text data-testid="lang-name" x="15" y="10" class="lang-name">
-        JavaScript 0.83%
+      <circle cx="5" cy="6" r="5" fill="#f1e05a" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        JavaScript 0.96%
       </text>
     </g>
   </g></g>
@@ -328,15 +460,39 @@
         </g>
       </svg>
     
-			<!-- END https://github%2Dreadme%2Dstats.vercel.app/api/top%2Dlangs/?username=xamidi&layout=donut%2Dvertical&theme=radical&hide_border=true -->
+			<!-- END https://github%2Dreadme%2Dstats.vercel.app/api/top%2Dlangs/?username=xamidi&layout=donut%2Dvertical&theme=radical&langs_count=4&hide_border=true -->
 		</svg>
 		<svg id="trophies" width="348" height="110" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 			<!-- BEGIN https://github%2Dprofile%2Dtrophy.vercel.app/?username=xamidi&theme=radical&column=3&margin%2Dw=9&margin%2Dh=9&title=MultiLanguage,LongTimeUser,Commits -->
 
-    <svg width="348" height="110" viewBox="0 0 348 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="348"
+      height="110"
+      viewBox="0 0 348 110"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       
-        <svg x="0" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#141321" stroke-opacity="1" fill-opacity="1"/>
+        <svg
+          x="0"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#141321"
+            stroke-opacity="1"
+            fill-opacity="1"
+          />
           
   
   
@@ -355,14 +511,14 @@
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#EEEEEE"/>
+    <circle cx="8" cy="6" r="4" fill="#EEEEEE" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#ff61c6">S</text>
   
   </svg>
   
           <text x="50%" y="18" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="13" fill="#fe428e">MultiLanguage</text>
           <text x="50%" y="85" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10.5" fill="#a9fef7">Rainbow Lang User</text>
-          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">10pt</text>
+          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">11pt</text>
           
     <style>
     @keyframes MultiLanguageRankAnimation {
@@ -377,13 +533,46 @@
       animation: MultiLanguageRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#fe428e"/>
-    <rect id="MultiLanguage-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#fe428e"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#fe428e"
+    />
+    <rect
+      id="MultiLanguage-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#fe428e"
+    />
   
         </svg>
         
-        <svg x="119" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#141321" stroke-opacity="1" fill-opacity="1"/>
+        <svg
+          x="119"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#141321"
+            stroke-opacity="1"
+            fill-opacity="1"
+          />
           
   
   
@@ -402,7 +591,7 @@
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#EEEEEE"/>
+    <circle cx="8" cy="6" r="4" fill="#EEEEEE" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#ff61c6">S</text>
   
   </svg>
@@ -424,13 +613,46 @@
       animation: LongTimeUserRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#fe428e"/>
-    <rect id="LongTimeUser-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#fe428e"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#fe428e"
+    />
+    <rect
+      id="LongTimeUser-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#fe428e"
+    />
   
         </svg>
         
-        <svg x="238" y="0" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" rx="4.5" width="109" height="109" stroke="#e1e4e8" fill="#141321" stroke-opacity="1" fill-opacity="1"/>
+        <svg
+          x="238"
+          y="0"
+          width="110"
+          height="110"
+          viewBox="0 0 110 110"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            rx="4.5"
+            width="109"
+            height="109"
+            stroke="#e1e4e8"
+            fill="#141321"
+            stroke-opacity="1"
+            fill-opacity="1"
+          />
           
   <svg xmlns="http://www.w3.org/2000/svg" width="90pt" height="90pt" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
 <metadata>
@@ -460,7 +682,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#EEEEEE"/>
+    <circle cx="8" cy="6" r="4" fill="#EEEEEE" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#3A3A3A">A</text>
   
     </svg>
@@ -479,14 +701,14 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
     <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
     <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
     <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#EEEEEE"/>
+    <circle cx="8" cy="6" r="4" fill="#EEEEEE" />
     <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#3A3A3A">A</text>
   
   </svg>
   
           <text x="50%" y="18" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="13" fill="#fe428e">Commits</text>
           <text x="50%" y="85" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10.5" fill="#a9fef7">Hyper Committer</text>
-          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">399pt</text>
+          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#a9fef7">403pt</text>
           
     <style>
     @keyframes CommitsRankAnimation {
@@ -494,15 +716,30 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         width: 0px;
       }
       to {
-        width: 53.06666666666666px;
+        width: 54.13333333333333px;
       }
     }
     #Commits-rank-progress{
       animation: CommitsRankAnimation 1s forwards ease-in-out;
     }
     </style>
-    <rect x="15" y="101" rx="1" width="80" height="3.2" opacity="0.3" fill="#fe428e"/>
-    <rect id="Commits-rank-progress" x="15" y="101" rx="1" height="3.2" fill="#fe428e"/>
+    <rect
+      x="15"
+      y="101"
+      rx="1"
+      width="80"
+      height="3.2"
+      opacity="0.3"
+      fill="#fe428e"
+    />
+    <rect
+      id="Commits-rank-progress"
+      x="15"
+      y="101"
+      rx="1"
+      height="3.2"
+      fill="#fe428e"
+    />
   
         </svg>
         
