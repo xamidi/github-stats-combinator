@@ -1,4 +1,3 @@
-import fetch from "node-fetch"; // npm install node-fetch
 import express from "express"; // npm install express
 import path from "path";
 import * as url from 'url';
@@ -6,23 +5,6 @@ import * as url from 'url';
 const port = 80;
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
-function timeout(ms, promise) {
-	return new Promise((resolve, reject) => {
-		const timer = setTimeout(() => {
-			reject(new Error('timeout'))
-		}, ms);
-		promise
-			.then(value => {
-				clearTimeout(timer)
-				resolve(value)
-			})
-			.catch(reason => {
-				clearTimeout(timer)
-				reject(reason)
-			});
-	})
-}
 
 function escapeXmlCmts(unsafe) {
 	return unsafe
@@ -44,42 +26,24 @@ const requestListener = async function (req, res) {
 	let urlTrophies = "https://github-profile-trophy.vercel.app/?" + trophies;
 
 	// 2. Query APIs
-	let resStats;
 	let errStats;
-	await timeout(5000, fetch(urlStats, { next: { revalidate: 60 } })).then(function(response) { // The data will be revalidated every 60 seconds (1 minute) ; according to https://vercel.com/docs/infrastructure/data-cache#time-based-revalidation
-		resStats = response;
-	}).catch(function(error) {
+	let errLanguages;
+	let errTrophies;
+	const signal = AbortSignal.timeout(5000);
+	const [txtStats, txtLanguages, txtTrophies] = await Promise.all([
+		fetch(urlStats, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errStats = error;
-	});
-	let resLanguages;
-	let errLanguages;
-	await timeout(5000, fetch(urlLanguages, { next: { revalidate: 60 } })).then(function(response) {
-		resLanguages = response;
-	}).catch(function(error) {
+	}),
+		fetch(urlLanguages, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errLanguages = error;
-	});
-	let resTrophies;
-	let errTrophies;
-	await timeout(5000, fetch(urlTrophies, { next: { revalidate: 60 } })).then(function(response) {
-		resTrophies = response;
-	}).catch(function(error) {
+	}),
+		fetch(urlTrophies, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errTrophies = error;
-	});
-	let txtStats;
-	try {
-		txtStats = await resStats.text();
-	} catch (error) { console.error(error); }
-	let txtLanguages;
-	try {
-		txtLanguages = await resLanguages.text();
-	} catch (error) { console.error(error); }
-	let txtTrophies;
-	try {
-		txtTrophies = await resTrophies.text();
-	} catch (error) { console.error(error); }
+	}),
+	]).catch(function(error) { console.error(error); });
 
 	// 3. Build resulting SVG
 	let result = "<!-- URL encoder for query strings: https://www.urlencoder.org ; for https://github-readme-stats.vercel.app/api?(stats-query), https://github-readme-stats.vercel.app/api/top-langs/?(languages-query), https://github-profile-trophy.vercel.app/?(trophies-query) -->\n"
