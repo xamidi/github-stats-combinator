@@ -29,17 +29,17 @@ const requestListener = async function (req, res) {
 	let errStats;
 	let errLanguages;
 	let errTrophies;
-	const signal = AbortSignal.timeout(5000);
+	const signal = AbortSignal.timeout(10000);
 	const [txtStats, txtLanguages, txtTrophies] = await Promise.all([
-		fetch(urlStats, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
+		fetch(urlStats, { signal, next: { revalidate: 120 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errStats = error;
 	}),
-		fetch(urlLanguages, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
+		fetch(urlLanguages, { signal, next: { revalidate: 120 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errLanguages = error;
 	}),
-		fetch(urlTrophies, { signal, next: { revalidate: 60 } }).then(res => res.text()).catch(function(error) {
+		fetch(urlTrophies, { signal, next: { revalidate: 120 } }).then(res => res.text()).catch(function(error) {
 		console.error(error);
 		errTrophies = error;
 	}),
