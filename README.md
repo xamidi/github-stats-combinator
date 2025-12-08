@@ -23,30 +23,30 @@ For example,
 
 was combined from
 
-1. [https://github-readme-stats.vercel.app/api?[…stats-query…]](https://github-readme-stats.vercel.app/api?username=xamidi&show_icons=true&theme=radical&include_all_commits=true&hide_border=true), for
+1. [https://github-readme-stats-xamidi.vercel.app/api?[…stats-query…]](https://github-readme-stats-xamidi.vercel.app/api?username=xamidi&show_icons=true&theme=radical&include_all_commits=true&hide_border=true), for
    ```
    […stats-query…] := username=xamidi&show_icons=true&theme=radical&include_all_commits=true&hide_border=true
    ```
-2. [https://github-readme-stats.vercel.app/api/top-langs/?[…languages-query…]](https://github-readme-stats.vercel.app/api/top-langs/?username=xamidi&layout=donut-vertical&theme=radical&langs_count=4&hide_border=true), for
+2. [https://github-readme-stats-xamidi.vercel.app/api/top-langs/?[…languages-query…]](https://github-readme-stats-xamidi.vercel.app/api/top-langs/?username=xamidi&layout=donut-vertical&theme=radical&langs_count=4&hide_border=true), for
    ```
    […languages-query…] := username=xamidi&layout=donut-vertical&theme=radical&langs_count=4&hide_border=true
    ```
-3. [https://github-profile-trophy.vercel.app/?[…trophies-query…]](https://github-profile-trophy.vercel.app/?username=xamidi&theme=radical&column=3&margin-w=9&margin-h=9&title=MultiLanguage,LongTimeUser,Commits), for
+3. [https://github-profile-trophy-xamidi.vercel.app/?[…trophies-query…]](https://github-profile-trophy-xamidi.vercel.app/?username=xamidi&theme=radical&column=3&margin-w=9&margin-h=9&title=LongTimeUser,Experience,Commits), for
    ```
-   […trophies-query…] := username=xamidi&theme=radical&column=3&margin-w=9&margin-h=9&title=MultiLanguage,LongTimeUser,Commits
+   […trophies-query…] := username=xamidi&theme=radical&column=3&margin-w=9&margin-h=9&title=LongTimeUser,Experience,Commits
    ```
 
-via [https://github-stats-combinator.vercel.app/api?[…query…]](https://github-stats-combinator.vercel.app/api?stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DMultiLanguage%2CLongTimeUser%2CCommits), for
+via [https://github-stats-combinator.vercel.app/api?[…query…]](https://github-stats-combinator.vercel.app/api?stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DLongTimeUser%2CExperience%2CCommits), for
 
 ```
-[…query…] := stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DMultiLanguage%2CLongTimeUser%2CCommits
+[…query…] := stats=username%3Dxamidi%26show_icons%3Dtrue%26theme%3Dradical%26include_all_commits%3Dtrue%26hide_border%3Dtrue&languages=username%3Dxamidi%26layout%3Ddonut-vertical%26theme%3Dradical%26langs_count%3D4%26hide_border%3Dtrue&trophies=username%3Dxamidi%26theme%3Dradical%26column%3D3%26margin-w%3D9%26margin-h%3D9%26title%3DLongTimeUser%2CExperience%2CCommits
 ```
 
 &nbsp;  
 I recommend to request images that fit the predefined container dimensions, such as via
 
 ```
-column=3&margin-w=9&margin-h=9&title=MultiLanguage,Experience,Commits
+column=3&margin-w=9&margin-h=9&title=LongTimeUser,Experience,Commits
 ```
 
 for `[…trophies-query…]`, and to query the SVG from your `username/username` repository's `README.md` like
