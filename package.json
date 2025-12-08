@@ -16,7 +16,7 @@
   "author": "Samiro Discher",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2",
-    "next": "^13.4.20-canary.13"
+    "express": "^5.2.1",
+    "next": "^16.0.8"
   }
 }
