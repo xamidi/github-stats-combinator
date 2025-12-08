@@ -2,11 +2,11 @@
 
 This tool combines three scalable vector graphics (SVG) images from three sources
 
-1. `https://github-readme-stats.vercel.app/api?[…stats-query…]`  
+1. `https://github-readme-stats.vercel.app/api?[…stats-query…]`<sup>✻</sup>  
    of [@anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-2. `https://github-readme-stats.vercel.app/api/top-langs?[…languages-query…]`  
+2. `https://github-readme-stats.vercel.app/api/top-langs?[…languages-query…]`<sup>✻</sup>  
    of [@anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-3. `https://github-profile-trophy.vercel.app/?[…trophies-query…]`  
+3. `https://github-profile-trophy.vercel.app/?[…trophies-query…]`<sup>✻</sup>  
    of [@ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)
 
 via a single query `https://github-stats-combinator.vercel.app/api?[…query…]`, for
@@ -58,3 +58,5 @@ for `[…trophies-query…]`, and to query the SVG from your `username/username`
 ```
 
 in order to handle cases where the `github-stats-combinator.vercel.app` deployment went into "light sleep" due to inactivity (see [issue #1](https://github.com/xamidi/github-stats-combinator/issues/1)).
+
+<sup>✻</sup><sub>To be more precise, I deployed my forks thereof due to bandwidth issues with the main deployments.</sub>
